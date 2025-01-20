@@ -65,6 +65,29 @@ p{
     font-size: 2.3rem;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, table th{
+    background-color: var(--light-gray-color);
+}
+
 .main-bg{
     background-image: url('../images/intro/main-bg.svg');
     background-size: cover;
@@ -258,6 +281,25 @@ p{
     transform: translate(-3%, 3%) scale(1.2) rotate(4deg);
 }
 
+.pricing-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing-bot{
+    overflow: hidden;
+    overflow-x: auto;
+    max-width: 64rem;
+    width: 100%;
+}
+
+
 @media (max-width: 1200px) {
     .gallery-bot {
         grid-template-columns: repeat(2, 1fr);
@@ -269,3 +311,4 @@ p{
         grid-template-columns: 1fr !important;
     }
 }
+
