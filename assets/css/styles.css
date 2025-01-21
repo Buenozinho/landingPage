@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -177,7 +178,6 @@ tfoot td, table th{
 
 .intro-content{
     position: relative;
-    top: -8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: stretch;
@@ -251,7 +251,7 @@ tfoot td, table th{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    min-height: 105vh;
+    min-height: 112vh;
 }
 
 /*change the the box model of the photos*/
@@ -299,6 +299,75 @@ tfoot td, table th{
     width: 100%;
 }
 
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 2.8rem;
+}
+
+.form-group{
+    flex: 1 1 40rem;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-group input, 
+.form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder{
+    color: #d3d3d3;
+}
+
+.footer-content p{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 2.8rem;
+}
+
+.heart{
+    color: var(--secondary-color)
+}
 
 @media (max-width: 1200px) {
     .gallery-bot {
